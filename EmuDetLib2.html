@@ -10,9 +10,9 @@
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" />
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" />
 <!-- charset=utf-8,html,xhtml -->
-<meta name="src" content="EmuDetLib2.tex" />
-<meta name="date" content="2020-10-08 21:03:00" />
-<link rel="stylesheet" type="text/css" href="EmuDetLib2.css" />
+<meta name="src" content="EmuDetLib.tex" />
+<meta name="date" content="2020-09-20 10:46:00" />
+<link rel="stylesheet" type="text/css" href="EmuDetLib.css" />
 </head><body
 >
 <div class="contents">
@@ -25,20 +25,17 @@
 
 
 <h2 class="titleHead">EmuDetLib: Emulation-Detection Library</h2>
-<div class="author" ><span
-class="cmr-12x-x-120">Saurabh Kumar</span></div><br />
-<div class="date" ><span
-class="cmr-12x-x-120">October 2020</span></div>
+<div class="author" ></div><br />
    </div>
-   <h3 class="sectionHead"><span class="titlemark">A &nbsp;&nbsp;&nbsp;</span> <a
- id="x1-1000A"></a>Overview of EmuDetLib</h3>
-<!--l. 49--><p class="noindent" >We have developed a flexible <span
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a
+ id="x1-10001"></a>Overview of EmuDetLib</h3>
+<!--l. 21--><p class="noindent" >We have developed a flexible <span
 class="cmbx-12">emu</span>lation-<span
 class="cmbx-12">det</span>ection <span
 class="cmbx-12">lib</span>rary (EmuDetLib). The
 detection techniques in this library can be broadly classified into five
 categories (refer Table <a
-href="#tl1">1<!--tex4ht:ref: tab:emuCategory --></a>): <span
+href="#x1-10011">1<!--tex4ht:ref: tab:emuCategory --></a>): <span
 class="cmti-12">(i) </span>Unique device information, <span
 class="cmti-12">(ii) </span>Sensors&#x2019; reading,
 <span
@@ -51,8 +48,8 @@ detection.
 
 
 
-<!--l. 58--><p class="indent" >   <a
- id="tl1"></a></p><hr class="float" /><div class="float"
+<!--l. 30--><p class="indent" >   <a
+ id="x1-10011"></a></p><hr class="float" /><div class="float"
 >
 
 
@@ -68,89 +65,67 @@ id="TBL-2-2" /></colgroup><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"
 class="td11"><span
-class="cmbx-10x-x-109">Detection         </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"
+class="cmbx-12">Detection         </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"
 class="td11"><div class="multirow"><!-- rows=2 -->
 <span
-class="cmbx-10x-x-109">Description</span></div>                                                  </td></tr><tr
+class="cmbx-12">Description</span></div>                                                  </td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"
 class="td11"><span
-class="cmbx-10x-x-109">Categories </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"
+class="cmbx-12">Categories </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"
 class="td11"></td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"
-class="td11"><span
-class="cmr-10x-x-109">Unique device        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"
-class="td11"><span
-class="cmr-10x-x-109">Detection by observing unrealistic device information    </span></td>
+class="td11">Unique device        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"
+class="td11">Detection by observing unrealistic device information    </td>
 </tr><tr
  style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"
-class="td11"><span
-class="cmr-10x-x-109">information (basic) </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"
-class="td11"><span
-class="cmr-10x-x-109">values (e.g., IMEI value is 00000)                               </span></td>
+class="td11">information (basic) </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"
+class="td11">values (e.g., IMEI value is 00000)                               </td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"
-class="td11"><span
-class="cmr-10x-x-109">Unique device        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"
-class="td11"><span
-class="cmr-10x-x-109">Detection based on fixed reading of unique device         </span></td>
+class="td11">Unique device        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"
+class="td11">Detection based on fixed reading of unique device         </td>
 </tr><tr
  style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"
-class="td11"><span
-class="cmr-10x-x-109">information (smart)</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-2"
-class="td11"><span
-class="cmr-10x-x-109">information (e.g., IMEI value is constant)                    </span></td>
+class="td11">information (smart)</td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-2"
+class="td11">information (e.g., IMEI value is constant)                    </td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-1"
 class="td11"><div class="multirow"><!-- rows=2 -->
-<span
-class="cmr-10x-x-109">Sensors&#x2019; reading</span></div>     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-2"
-class="td11"><span
-class="cmr-10x-x-109">Absence of sensor or observing static values from          </span></td>
+Sensors&#x2019; reading</div>     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-2"
+class="td11">Absence of sensor or observing static values from          </td>
 </tr><tr
  style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-1"
 class="td11">                 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-2"
-class="td11"><span
-class="cmr-10x-x-109">fluctuating sensors (e.g., fixed reading of </span><span
-class="cmtt-10x-x-109">Light </span><span
-class="cmr-10x-x-109">sensor)  </span></td>
+class="td11">fluctuating sensors (e.g., fixed reading of <span
+class="cmtt-12">Light </span>sensor)  </td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-1"
-class="td11"><span
-class="cmr-10x-x-109">Device State          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-2"
-class="td11"><span
-class="cmr-10x-x-109">No change to the device state w.r.t. telephony signal,    </span></td>
+class="td11">Device State          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-2"
+class="td11">No change to the device state w.r.t. telephony signal,    </td>
 </tr><tr
  style="vertical-align:baseline;" id="TBL-2-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-1"
-class="td11"><span
-class="cmr-10x-x-109">information           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-2"
-class="td11"><span
-class="cmr-10x-x-109">battery power.                                                       </span></td>
+class="td11">information           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-2"
+class="td11">battery power.                                                       </td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-1"
 class="td11"><div class="multirow"><!-- rows=1 -->
-<span
-class="cmr-10x-x-109">GPS information</span></div>    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-2"
-class="td11"><span
-class="cmr-10x-x-109">No change on GPS location data or fake location change</span></td>
+GPS information</div>    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-2"
+class="td11">No change on GPS location data or fake location change</td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-12-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-1"
-class="td11"><span
-class="cmr-10x-x-109">Distributed           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-2"
-class="td11"><span
-class="cmr-10x-x-109">Observing identical unique information for multiple       </span></td>
+class="td11">Distributed           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-2"
+class="td11">Observing identical unique information for multiple       </td>
 </tr><tr
  style="vertical-align:baseline;" id="TBL-2-13-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-1"
-class="td11"><span
-class="cmr-10x-x-109">detection              </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-2"
-class="td11"><span
-class="cmr-10x-x-109">devices in a network.                                               </span></td>
+class="td11">detection              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-2"
+class="td11">devices in a network.                                               </td>
 </tr><tr
 class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-14-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-1"
@@ -160,9 +135,9 @@ class="td11">                 </td></tr></table></div>
 
    </div><hr class="endfloat" />
    </div>
-   <h4 class="subsectionHead"><span class="titlemark">A.1 &nbsp;&nbsp;</span> <a
- id="x1-2000A.1"></a>Unique Device Information:</h4>
-<!--l. 103--><p class="noindent" >As many Android devices are smartphones, Android provides a comprehensive
+   <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a
+ id="x1-20001.1"></a>Unique Device Information:</h4>
+<!--l. 74--><p class="noindent" >As many Android devices are smartphones, Android provides a comprehensive
 API that includes the interfaces to query telephony information along with unique
 data per device like IMEI, IMSI, and phone number. These details may help in
 identifying a device uniquely. For example, on querying Device ID (IMEI)
@@ -171,18 +146,18 @@ the device is an emulator. Similarly, other information related to a SIM
 card like SIM serial number, phone number, and IMSI can reveal the
 identity of the underlying platform, i.e., whether the platform is emulated or
 not.
-</p><!--l. 116--><p class="indent" >   To hide the emulated platform against the emulation-detection based on the
+</p><!--l. 87--><p class="indent" >   To hide the emulated platform against the emulation-detection based on the
 unique device information, a sandbox designer can supply more realistic data
 when queried by an App. Most of the dynamic analysis framework such as
 CuckooDroid, Droidbox, and MobSF provide similar anti-emulation-detection
 measures by feeding-in realistic device information. However, a smart malware
 author can analyze this data and find that they are static (fixed) to successfully
 detect the underlying platform.
-</p><!--l. 125--><p class="noindent" >
+</p><!--l. 96--><p class="noindent" >
 </p>
-   <h4 class="subsectionHead"><span class="titlemark">A.2 &nbsp;&nbsp;</span> <a
- id="x1-3000A.2"></a>Sensors&#x2019; Reading:</h4>
-<!--l. 127--><p class="noindent" >Today&#x2019;s smartphones have various sensors for different purposes that can be
+   <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a
+ id="x1-30001.2"></a>Sensors&#x2019; Reading:</h4>
+<!--l. 98--><p class="noindent" >Today&#x2019;s smartphones have various sensors for different purposes that can be
 broadly classified into two categories—motion sensors and environmental sensors.
 The motion sensors help to detect the motion on a device. Such sensors can
 measure the acceleration, magnetic field, rotation, and others along the three
@@ -192,7 +167,7 @@ operating environment so that an App can alter its behavior based on the
 readings. For example, a light sensor provides the luminosity information of the
 environment which can be used by a smart-phone to adjust the display
 brightness.
-</p><!--l. 144--><p class="indent" >   For an Android App, the use of these sensors do not require any permission
+</p><!--l. 115--><p class="indent" >   For an Android App, the use of these sensors do not require any permission
 
 
 
@@ -204,47 +179,47 @@ motion-detection feature to evade the dynamic analysis <span class="cite">[<a
 href="#Xthehackernews:2019">1</a>]</span>. This is an indicator
 that the dynamic analysis framework on the play store is not secure against the
 advanced emulation-detection techniques.
-</p><!--l. 156--><p class="indent" >   Identifying such sophisticated malware is not trivial; hence, we have incorporated
+</p><!--l. 127--><p class="indent" >   Identifying such sophisticated malware is not trivial; hence, we have incorporated
 sensor-based detection functionalities in our library for emulation-detection. Our
 library provides the detection mechanism based on the motion sensors as well as
 on the environmental sensors.
-</p><!--l. 166--><p class="noindent" >
+</p><!--l. 137--><p class="noindent" >
 </p>
-   <h4 class="subsectionHead"><span class="titlemark">A.3 &nbsp;&nbsp;</span> <a
- id="x1-4000A.3"></a>Device State Information:</h4>
-<!--l. 168--><p class="noindent" >In reality, a device state gets changed due to some internal/external events such
+   <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a
+ id="x1-40001.3"></a>Device State Information:</h4>
+<!--l. 139--><p class="noindent" >In reality, a device state gets changed due to some internal/external events such
 as changes in telephony signal strength, battery power, and incoming
 SMS/Calls. However, such state changes behavior is missing in an emulated
 environment. Therefore, information related to a device state can also be
 queried by malware to detect the emulated environment as described
 below:
-</p><!--l. 171--><p class="noindent" ><span
+</p><!--l. 142--><p class="noindent" ><span
 class="cmbx-12">(i) Telephony signal: </span>As the signal strength of the telephony system cannot
 remain constant for a long time, malware can observe such information over a
 period. The malware can flag the underlying operating environment as emulated if
 it finds that the signal strength is constant.
-</p><!--l. 179--><p class="noindent" ><span
+</p><!--l. 150--><p class="noindent" ><span
 class="cmbx-12">(ii) Battery power: </span>Similar to the telephony signal, the battery power&#x2019;s
 strength which is the standard behavior of every mobile device. If such behavior is
 absent, and battery power remains constant, it indicates that the operational
 machine is virtual.
-</p><!--l. 186--><p class="noindent" ><span
+</p><!--l. 157--><p class="noindent" ><span
 class="cmbx-12">(iii) Incoming SMS/call: </span>A malware can register a notification for every
 incoming SMS/Call, and wait for the event. In an emulated environment, malware
 may not observe such an event and will thus remain dormant without performing
 any malicious activities.
-</p><!--l. 194--><p class="noindent" >
+</p><!--l. 165--><p class="noindent" >
 
 
 
 </p>
-   <h4 class="subsectionHead"><span class="titlemark">A.4 &nbsp;&nbsp;</span> <a
- id="x1-5000A.4"></a>Using the GPS Location Information:</h4>
-<!--l. 196--><p class="noindent" >GPS (Global Positioning System) is also a sensor and the malware can use similar
+   <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a
+ id="x1-50001.4"></a>Using the GPS Location Information:</h4>
+<!--l. 167--><p class="noindent" >GPS (Global Positioning System) is also a sensor and the malware can use similar
 methods (as explained above) that are used for other sensors to detect emulated
 platforms. However, the emulation-detection based on the GPS is somewhat
 different from other sensors, as explained below.
-</p><!--l. 205--><p class="indent" >   Android provides rich APIs to perform various tasks, one such API gives the
+</p><!--l. 176--><p class="indent" >   Android provides rich APIs to perform various tasks, one such API gives the
 power to generate a mock location that can be used by an App to introduce a fake
 location when queried. An Android App requires <span
 class="cmtt-12">ACCESS</span><span
@@ -263,7 +238,7 @@ class="cmti-12">(ii) </span>the mock location API is used to set the geo-locatio
 the device, or <span
 class="cmti-12">(iii) </span>BTS geo-location is not collaborating with the GPS
 location.
-</p><!--l. 221--><p class="indent" >   Detection in case of condition <span
+</p><!--l. 192--><p class="indent" >   Detection in case of condition <span
 class="cmti-12">(i) </span>is easy; since we do not see any changes in
 geo-location, we can directly infer that a device is an emulator. However,
 exploiting <span
@@ -279,7 +254,7 @@ class="cmmi-12">x </span>meters. The
 value of <span
 class="cmmi-12">x </span>may differ depending on the density of the area where BTS is
 located.
-</p><!--l. 232--><p class="indent" >   The <span
+</p><!--l. 203--><p class="indent" >   The <span
 class="cmtt-12">Location </span>module of the Android framework provides explicit methods to
 differentiate the location data w.r.t. its source i.e. whether the data is a mock
 location or a real GPS device reading. Malware can use this method to detect
@@ -292,7 +267,7 @@ feature provided by the <span
 class="cmtt-12">Location </span>module doesn&#x2019;t help and requires a more
 fine-grained mechanism to differentiate mock locations from real location
 data.
-</p><!--l. 250--><p class="indent" >   Another possible approach to be sure about the location data being fake is to
+</p><!--l. 221--><p class="indent" >   Another possible approach to be sure about the location data being fake is to
 identify active Apps that can generate fake location information. As discussed
 
 
@@ -306,8 +281,8 @@ and services that have been granted this permission and subsequently checking
 them against the list of running processes. If we find a running App or service,
 then we can say that the current location is most probably fake and can consider
 it to be an emulated environment.
-</p><!--l. 264--><p class="indent" >   <img
-src="EmuDetLib20x.svg" alt="---------------------------------------------------------------------------
+</p><!--l. 235--><p class="indent" >   <img
+src="EmuDetLib0x.svg" alt="---------------------------------------------------------------------------
 --Algorithm---1:-Fake Location-App-detector----------------------------------
  1 returnValue ← false
  2 RunningApppkgName ←  ϕ
@@ -349,7 +324,7 @@ src="EmuDetLib20x.svg" alt="----------------------------------------------------
  id="x1-5017r16"></a><a
  id="x1-5018r17"></a><a
  id="al1"></a>
-</p><!--l. 303--><p class="indent" >   Algorithm <a
+</p><!--l. 274--><p class="indent" >   Algorithm <a
 href="#al1">1<!--tex4ht:ref: algo:fakeLocationApp --></a> detects such Apps and returns <span
 class="cmtt-12">true </span>or <span
 class="cmtt-12">false </span>based on the status
@@ -362,11 +337,11 @@ class="cmtt-12">_LOCATION </span>permission.
 If at least one App/service is active with the permission, the algorithm returns
 <span
 class="cmtt-12">true</span>.
-</p><!--l. 311--><p class="noindent" >
+</p><!--l. 282--><p class="noindent" >
 </p>
-   <h4 class="subsectionHead"><span class="titlemark">A.5 &nbsp;&nbsp;</span> <a
- id="x1-6000A.5"></a>Distributed Emulation-detection:</h4>
-<!--l. 313--><p class="noindent" >So far, we have discussed the emulation-detection techniques that can be
+   <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a
+ id="x1-60001.5"></a>Distributed Emulation-detection:</h4>
+<!--l. 284--><p class="noindent" >So far, we have discussed the emulation-detection techniques that can be
 
 
 
@@ -378,7 +353,7 @@ from the AppID, a smartphone also contains device-related unique IDs
 namely IMEI, IMSI, SIM Serial number, and others. This information
 can also help in identifying a device uniquely at the server as explained
 below.
-</p><!--l. 329--><p class="indent" >   It is trivial to see that a slightly different malware in terms of its signature can
+</p><!--l. 300--><p class="indent" >   It is trivial to see that a slightly different malware in terms of its signature can
 be generated easily by changing its package name, altering the function name
 and variable naming convention, or by introducing dummy code while
 retaining the overall functionality and the server address. Such malware can
@@ -390,8 +365,8 @@ information (expected to be unique), it can flag those devices as emulated
 environment. As this emulation-detection is carried out in the context of multiple
 connected devices, we classify this detection technique as a distributed
 emulation-detection.
-</p><!--l. 347--><p class="indent" >   <img
-src="EmuDetLib21x.svg" alt="---------------------------------------------------------------------------
+</p><!--l. 318--><p class="indent" >   <img
+src="EmuDetLib1x.svg" alt="---------------------------------------------------------------------------
 --Algorithm---2:-Blocking-Emulated Device (server)---------------------------
  1 Devicesblkd ← getBlockedDevices()
  2 Devicescon ← getConnectedDevices()
@@ -422,7 +397,7 @@ src="EmuDetLib21x.svg" alt="----------------------------------------------------
  id="x1-6012r11"></a><a
  id="x1-6013r12"></a><a
  id="al2"></a>
-</p><!--l. 378--><p class="indent" >   To detect emulation using the distributed emulation-detection mechanism, we
+</p><!--l. 349--><p class="indent" >   To detect emulation using the distributed emulation-detection mechanism, we
 need a server where the emulation-detection mechanism is deployed. A candidate
 emulation-detection procedure that can be deployed on the centralized server is
 described in Algorithm <a
@@ -435,625 +410,21 @@ The server can execute this detection process either on a new device connection
 request or on every request received from the client. On detection of the emulated
 device, the server can either stop serving the client or can notify the client about
 the emulation-detection.
-</p><!--l. 394--><p class="noindent" >
+</p><!--l. 364--><p class="noindent" >
 </p>
-   <h4 class="subsectionHead"><span class="titlemark">A.6 &nbsp;&nbsp;</span> <a
- id="x1-7000A.6"></a>Ethical Concern</h4>
-<!--l. 396--><p class="noindent" >EmuDetLib is designed for malware analysts, vulnerability assessment and
-penetration testing (VAPT) engineers, and in general, cybersecurity researchers
-who are interested in checking vulnerabilities in emulator-driven dynamic analysis
-framework. However, there is a concern that such a library might also be
-misused by unethical hackers for finding vulnerabilities in already released
-popular analysis frameworks and use the knowledge to bypass the dynamic
-analysis process. We also note that this ethical concern is often present in all
-research publications that present a VAPT tool or disclose a vulnerability in
-products.
-</p><!--l. 399--><p class="noindent" >
+
+<h3 class="likesectionHead">Ethical Concern</h3>
+<p class="noindent">
+EmuDetLib is designed for malware analysts, vulnerability assessment and penetration testing (VAPT) engineers, and in general,
+cybersecurity researchers who are interested in checking vulnerabilities in emulator-driven dynamic analysis framework.
+However, there is a concern that such a library might also be misused by unethical hackers for finding vulnerabilities in already
+released popular analysis frameworks and use the knowledge to bypass the dynamic analysis process.
+We also note that this ethical concern is often present in all research publications that present a VAPT tool or disclose a vulnerability in products.
 </p>
-   <h3 class="sectionHead"><span class="titlemark">B &nbsp;&nbsp;&nbsp;</span> <a
- id="x1-8000B"></a>Results</h3>
-<!--l. 400--><p class="noindent" >
-</p>
-   <h4 class="subsectionHead"><span class="titlemark">B.1 &nbsp;&nbsp;</span> <a
- id="x1-9000B.1"></a>Evaluation of existing framework against Real Malware</h4>
-<!--l. 402--><p class="noindent" >Table <a
-href="#tl2">2<!--tex4ht:ref: tab:RealMalEval --></a> shows the classification of real malware in terms of their emulation-detection
-capability and the evaluation of anti-emulation-detection measures of existing
-dynamic analysis framework against the real malware.
-</p>
-   <div class="table">
 
-
-
-<!--l. 408--><p class="indent" >   <a
- id="tl2"></a><a
- id="x1-10001r22"></a></p><hr class="float" /><div class="float"
->
-
-
-
- <div class="caption"
-><span class="id">Table 2: </span><span
-class="content">Evaluation of existing framework against real malware sample.</span></div><!--tex4ht:label?: x1-90012 -->
-<div class="tabular"> <table id="TBL-3" class="tabular"
-cellspacing="0" cellpadding="0" rules="groups"
-><colgroup id="TBL-3-1g"><col
-id="TBL-3-1" /></colgroup><colgroup id="TBL-3-2g"><col
-id="TBL-3-2" /></colgroup><colgroup id="TBL-3-3g"><col
-id="TBL-3-3" /></colgroup><colgroup id="TBL-3-4g"><col
-id="TBL-3-4" /></colgroup><colgroup id="TBL-3-5g"><col
-id="TBL-3-5" /></colgroup><colgroup id="TBL-3-6g"><col
-id="TBL-3-6" /></colgroup><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-1-1"
-class="td11"><span
-class="cmbx-10x-x-109">Detection Type          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-2"
-class="td11"><span
-class="cmbx-10x-x-109">#Sample</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-3"
-class="td11"><span
-class="cmbx-10x-x-109">Emulator</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-4"
-class="td11"><span
-class="cmbx-10x-x-109">Droidbox</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-5"
-class="td11"><span
-class="cmbx-10x-x-109">CuckooDroid</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-6"
-class="td11"><span
-class="cmbx-10x-x-109">MobSF</span></td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-2-1"
-class="td11"><span
-class="cmr-10x-x-109">No emulation-detection     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-2"
-class="td11">   <span
-class="cmr-10x-x-109">284     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-3"
-class="td11">    <span
-class="cmsy-10x-x-109">×   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-4"
-class="td11">    <span
-class="cmsy-10x-x-109">×   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-5"
-class="td11">      <span
-class="cmsy-10x-x-109">×    </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-6"
-class="td11">   <span
-class="cmsy-10x-x-109">×  </span></td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-3-1"
-class="td11"><span
-class="cmr-10x-x-109">Unique Device Information</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-2"
-class="td11">   <span
-class="cmr-10x-x-109">137     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-3"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-4"
-class="td11">    <span
-class="cmsy-10x-x-109">×   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-5"
-class="td11">      <span
-class="cmsy-10x-x-109">×    </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-6"
-class="td11">   <span
-class="cmsy-10x-x-109">×  </span></td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-4-1"
-class="td11"><span
-class="cmr-10x-x-109">File Info / SysProp          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-4-2"
-class="td11">   <span
-class="cmr-10x-x-109">303     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-4-3"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-4-4"
-class="td11">    <span
-class="cmsy-10x-x-109">×   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-4-5"
-class="td11">      <span
-class="cmsy-10x-x-109">×    </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-4-6"
-class="td11">   <span
-class="cmsy-10x-x-109">×  </span></td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-5-1"
-class="td11"><span
-class="cmr-10x-x-109">Device State                   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-5-2"
-class="td11">   <span
-class="cmr-10x-x-109">19     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-5-3"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-5-4"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-5-5"
-class="td11">     <span
-class="msam-10x-x-109">✓</span>    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-5-6"
-class="td11">   <span
-class="msam-10x-x-109">✓</span>  </td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-6-1"
-class="td11"><span
-class="cmr-10x-x-109">Sensors                          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-6-2"
-class="td11">    <span
-class="cmr-10x-x-109">3      </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-6-3"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-6-4"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-6-5"
-class="td11">     <span
-class="msam-10x-x-109">✓</span>    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-6-6"
-class="td11">   <span
-class="msam-10x-x-109">✓</span>  </td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-7-1"
-class="td11"><span
-class="cmr-10x-x-109">Mix                              </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-7-2"
-class="td11">   <span
-class="cmr-10x-x-109">257     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-7-3"
-class="td11">    <span
-class="msam-10x-x-109">✓</span>   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-7-4"
-class="td11">    <span
-class="cmsy-10x-x-109">×   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-7-5"
-class="td11">      <span
-class="cmsy-10x-x-109">×    </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-7-6"
-class="td11">   <span
-class="cmsy-10x-x-109">×  </span></td>
-</tr><tr
-class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr
- style="vertical-align:baseline;" id="TBL-3-8-"><td colspan="6" style="white-space:nowrap; text-align:left;" id="TBL-3-8-1"
-class="td11"><div class="multicolumn"  style="white-space:nowrap; text-align:left;"><div class="minipage"><span
-class="cmti-8">Note:</span>  <span
-class="msam-10x-x-80">✓</span> <span
-class="cmr-8">represents  successful  detection  of  underlying  emulation  environment,  whereas</span>
-<span
-class="cmsy-8">× </span><span
-class="cmr-8">represents  failure  in  detecting  emulation  <br/> environment. SysProp  represents  the system</span>
-<span
-class="cmr-8">properties. The Mix represents the malware sample that uses more than one detection <br/> method</span>
-<span
-class="cmr-8">from Unique Device Information, File Info and System Properties.</span>                                                                         </div></div>
-</td></tr></table></div>
-
-
-
-   </div><hr class="endfloat" />
-   </div>
-   <h4 class="subsectionHead"><span class="titlemark">B.2 &nbsp;&nbsp;</span> <a
- id="x1-10000B.2"></a>Code snippet from BatterySaverMobi</h4>
-   <!--l. 438-->
-<a
- id="x1-10001r1"></a>
-<a
- id="x1-10002"></a>
-<div class="lstlisting" id="cs1"><span class="label"><a
- id="x1-10003r1"></a><span
-class="cmr-6">1</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">public</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">void</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">onSensorChanged</span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">SensorEvent</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">paramSensorEvent</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">{</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10004r2"></a><span
-class="cmr-6">2</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">k</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">registerListener</span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">,</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">l</span><span
-class="cmtt-10x-x-109">,</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">3)</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10005r3"></a><span
-class="cmr-6">3</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">Sensor</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">sensor</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">paramSensorEvent</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">sensor</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10006r4"></a><span
-class="cmr-6">4</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">k</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">registerListener</span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">,</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">sensor</span><span
-class="cmtt-10x-x-109">,</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">3)</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10007r5"></a><span
-class="cmr-6">5</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">if</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">sensor</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">getType</span><span
-class="cmtt-10x-x-109">()</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">==</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">1)</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">{</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10008r6"></a><span
-class="cmr-6">6</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">float</span><span
-class="cmtt-10x-x-109">[]</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">arrayOfFloat</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">paramSensorEvent</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">values</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10009r7"></a><span
-class="cmr-6">7</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">float</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f1</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">arrayOfFloat</span><span
-class="cmtt-10x-x-109">[0];</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10010r8"></a><span
-class="cmr-6">8</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">float</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f2</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">arrayOfFloat</span><span
-class="cmtt-10x-x-109">[1];</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10011r9"></a><span
-class="cmr-6">9</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">float</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f3</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">arrayOfFloat</span><span
-class="cmtt-10x-x-109">[2];</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10012r10"></a><span
-class="cmr-6">10</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">long</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">l</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">System</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">currentTimeMillis</span><span
-class="cmtt-10x-x-109">()</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10013r11"></a><span
-class="cmr-6">11</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">if</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">l</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">-</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">m</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">&#x003E;</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">100</span><span
-class="cmtt-10x-x-109">L</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">{</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10014r12"></a><span
-class="cmr-6">12</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">long</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">l1</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">m</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10015r13"></a><span
-class="cmr-6">13</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">m</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">l</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10016r14"></a><span
-class="cmr-6">14</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">if</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">Math</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">abs</span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">f1</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">+</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f2</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">+</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f3</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">-</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">n</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">-</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">o</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">-</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">p</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">/</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">float</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109">(</span><span
-class="cmtt-10x-x-109">l</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">-</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">l1</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">*</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">10000.0</span><span
-class="cmtt-10x-x-109">F</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">&#x003E;</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">600.0</span><span
-class="cmtt-10x-x-109">F</span><span
-class="cmtt-10x-x-109">)</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10017r15"></a><span
-class="cmr-6">15</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">a</span><span
-class="cmtt-10x-x-109">()</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10018r16"></a><span
-class="cmr-6">16</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">n</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f1</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10019r17"></a><span
-class="cmr-6">17</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">o</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f2</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10020r18"></a><span
-class="cmr-6">18</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">this</span><span
-class="cmtt-10x-x-109">.</span><span
-class="cmtt-10x-x-109">p</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">=</span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">f3</span><span
-class="cmtt-10x-x-109">;</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10021r19"></a><span
-class="cmr-6">19</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">}</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10022r20"></a><span
-class="cmr-6">20</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">}</span><span
-class="cmtt-10x-x-109"> </span><br /><span class="label"><a
- id="x1-10023r21"></a><span
-class="cmr-6">21</span></span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109"> </span><span
-class="cmtt-10x-x-109">}</span>
-<br />
-    <div class="caption"
-><span class="id">Listing 1:
-    </span><span
-class="content">Code
-    snippet
-    from
-    motion
-    sensor
-    malware.</span></div><!--tex4ht:label?: x1-10001rB -->
-   </div>
-<!--l. 462--><p class="noindent" >
-</p>
    <h3 class="likesectionHead"><a
- id="x1-11000B.2"></a>References</h3>
-<!--l. 462--><p class="noindent" >
+ id="x1-700012"></a>References</h3>
+<!--l. 364--><p class="noindent" >
    </p><div class="thebibliography">
    <p class="bibitem" ><span class="biblabel">
  [1]<span class="bibsp">   </span></span><a
