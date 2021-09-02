@@ -1,16 +1,4 @@
 
-body {
-  background: #555;
-}
-
-.contents {
-  max-width: 98%;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border: 3px solid red;
-  border-radius: 20px;
-}
 
 /* start css.sty */
 .cmr-10{font-size:83%;}
