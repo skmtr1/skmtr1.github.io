@@ -1,4 +1,17 @@
 
+body {
+  background: #555;
+}
+
+.contents {
+  max-width: 99%;
+  margin: auto;
+  background: white;
+  padding: 9px;
+  border: 3px solid red;
+  border-radius: 20px;
+}
+
 
 /* start css.sty */
 .cmr-10{font-size:83%;}
@@ -120,7 +133,7 @@ div.author{white-space: nowrap;}
 .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
 .abstract p {margin-left:5%; margin-right:5%;}
 div.abstract {width:100%;}
-.figure img.graphics {margin-left:10%;}
+.figure img.graphics {margin-left:0%;}
 .subfigcaption {margin-top:1em; margin-left:1em; text-align:center;}
 div.subfigure {text-align:center;display:inline-block;}
 #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}
