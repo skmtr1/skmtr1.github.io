@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 | Saurabh Kumar</title>
+    <link>https://skmtr1.github.io/publication-type/6/</link>
+      <atom:link href="https://skmtr1.github.io/publication-type/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2020 11:40:52 +0530</lastBuildDate>
+    <image>
+      <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>6</title>
+      <link>https://skmtr1.github.io/publication-type/6/</link>
+    </image>
+    
+    <item>
+      <title>The State of Android Security</title>
+      <link>https://skmtr1.github.io/publication/and-security/</link>
+      <pubDate>Wed, 18 Mar 2020 11:40:52 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/and-security/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

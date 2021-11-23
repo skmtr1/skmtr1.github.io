@@ -5,12 +5,36 @@
     <link>https://skmtr1.github.io/publication-type/1/</link>
       <atom:link href="https://skmtr1.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 11:21:41 +0530</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://skmtr1.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>DeepDetect: A Practical On-device Android Malware Detector</title>
+      <link>https://skmtr1.github.io/publication/deepdetect/</link>
+      <pubDate>Mon, 06 Dec 2021 11:21:41 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/deepdetect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STDNeut: Neutralizing Sensor, Telephony System and Device State Information on Emulated Android Environments</title>
+      <link>https://skmtr1.github.io/publication/stdneut/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://skmtr1.github.io/publication/stdneut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Host-Server-Based Malware Detection System for Android Platforms Using Machine Learning</title>
+      <link>https://skmtr1.github.io/publication/host-server/</link>
+      <pubDate>Tue, 12 Feb 2019 11:46:32 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/host-server/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An example conference paper</title>
@@ -29,6 +53,14 @@
 &lt;/div&gt;
 &lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>An Enhanced and Effective Encrypting Algorithm for High Volume Video Data Streaming Application on MANET</title>
+      <link>https://skmtr1.github.io/publication/enhanced/</link>
+      <pubDate>Mon, 09 Apr 2012 11:51:03 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/enhanced/</guid>
+      <description></description>
     </item>
     
   </channel>
