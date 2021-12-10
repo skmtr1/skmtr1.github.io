@@ -5,12 +5,20 @@
     <link>https://skmtr1.github.io/</link>
       <atom:link href="https://skmtr1.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Saurabh Kumar</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 11:21:41 +0530</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Dec 2021 15:04:56 +0530</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Saurabh Kumar</title>
       <link>https://skmtr1.github.io/</link>
     </image>
+    
+    <item>
+      <title>Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages?</title>
+      <link>https://skmtr1.github.io/publication/mapfam/</link>
+      <pubDate>Fri, 10 Dec 2021 15:04:56 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/mapfam/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DeepDetect: A Practical On-device Android Malware Detector</title>

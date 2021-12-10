@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Over the past few years, Android has become one of the most popular operating systems for smartphones as it is open-source and provides extensive support for wide variety of applications. This has led to an increase in the number of malware targeting Android devices. The lack of robust security enforcement in Play Store along with the rapid increase in the number of new Android malware presents a scope for a variety of diverse malicious applications to spread across devices. Furthermore, Android allows installation of an application from unverified sources (e.g., third-party market and sideloading), which opens up other ways for malware to infect the smartphones. This paper presents DeepDetect that enables on-device malware detection by employing a machine learning based model on static features. With effective feature engineering, DeepDetect can be used on-device. To classify an Android application as malware, it takes ∼5.32 seconds, which is 2.23X faster than API based malware detector, while consuming 0.45% (for 50 applications) of total device energy. DeepDetect provides a malware detection rate of 99.9% for known malware with a 0.01% false-positive rate. For unseen/new samples, it detects more than 97% malware with a false-positive rate of 173%. Further, in the presence of obfuscated malware, DeepDetect correctly detects 95.57% of malware samples. We have also evaluated our model against the Pegasus malware sample and with a new dataset after removing the potential biases across space and time." />
+  <meta name="description" content="With the increased popularity and wide adoption as a mobile OS platform, Android has been a major target for malware authors. Due to unprecedented rapid growth in the number, variants, and diversity of malware, detecting malware on the Android platform has become challenging. Beyond the detection of a malware, classifying the family the malware belongs to, helps security analysts to reuse malware removal techniques that is known to work for that family of malware. It takes manual analysis if a malware belongs to an unknown family. Therefore, classifying malware into exact family is important. This paper presents a technique and tool named MAPFam that applies machine learning on static features from the Manifest file and API packages to classify an Android malware into its family. This work is premised on a starting hypothesis that features extracted from API packages rather than on API calls lead to more precise classification. Our experiments indeed shows that API package based models provides ~1.63X more accurate classification compared to an API call based method. Our machine learning based malware family classification system uses API packages, requested permissions, and other features from the Manifest files. The proposed family classification system achieves accuracy and average precision above 97% for the top 60 malware families by using only 81 features with 97.55% of model reliability rate (Kappa score). The experimental results also shows that MAPFam can perfectly identity 36 malware families." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://skmtr1.github.io/publication/deepdetect/" />
+  <link rel="alternate" hreflang="en-us" href="https://skmtr1.github.io/publication/mapfam/" />
 
   
 
@@ -276,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://skmtr1.github.io/publication/deepdetect/" />
+  <link rel="canonical" href="https://skmtr1.github.io/publication/mapfam/" />
 
   
   
@@ -293,18 +293,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Saurabh Kumar" />
-  <meta property="og:url" content="https://skmtr1.github.io/publication/deepdetect/" />
-  <meta property="og:title" content="DeepDetect: A Practical On-device Android Malware Detector | Saurabh Kumar" />
-  <meta property="og:description" content="Over the past few years, Android has become one of the most popular operating systems for smartphones as it is open-source and provides extensive support for wide variety of applications. This has led to an increase in the number of malware targeting Android devices. The lack of robust security enforcement in Play Store along with the rapid increase in the number of new Android malware presents a scope for a variety of diverse malicious applications to spread across devices. Furthermore, Android allows installation of an application from unverified sources (e.g., third-party market and sideloading), which opens up other ways for malware to infect the smartphones. This paper presents DeepDetect that enables on-device malware detection by employing a machine learning based model on static features. With effective feature engineering, DeepDetect can be used on-device. To classify an Android application as malware, it takes ∼5.32 seconds, which is 2.23X faster than API based malware detector, while consuming 0.45% (for 50 applications) of total device energy. DeepDetect provides a malware detection rate of 99.9% for known malware with a 0.01% false-positive rate. For unseen/new samples, it detects more than 97% malware with a false-positive rate of 173%. Further, in the presence of obfuscated malware, DeepDetect correctly detects 95.57% of malware samples. We have also evaluated our model against the Pegasus malware sample and with a new dataset after removing the potential biases across space and time." /><meta property="og:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://skmtr1.github.io/publication/mapfam/" />
+  <meta property="og:title" content="Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages? | Saurabh Kumar" />
+  <meta property="og:description" content="With the increased popularity and wide adoption as a mobile OS platform, Android has been a major target for malware authors. Due to unprecedented rapid growth in the number, variants, and diversity of malware, detecting malware on the Android platform has become challenging. Beyond the detection of a malware, classifying the family the malware belongs to, helps security analysts to reuse malware removal techniques that is known to work for that family of malware. It takes manual analysis if a malware belongs to an unknown family. Therefore, classifying malware into exact family is important. This paper presents a technique and tool named MAPFam that applies machine learning on static features from the Manifest file and API packages to classify an Android malware into its family. This work is premised on a starting hypothesis that features extracted from API packages rather than on API calls lead to more precise classification. Our experiments indeed shows that API package based models provides ~1.63X more accurate classification compared to an API call based method. Our machine learning based malware family classification system uses API packages, requested permissions, and other features from the Manifest files. The proposed family classification system achieves accuracy and average precision above 97% for the top 60 malware families by using only 81 features with 97.55% of model reliability rate (Kappa score). The experimental results also shows that MAPFam can perfectly identity 36 malware families." /><meta property="og:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-11-23T11:21:41&#43;05:30"
+        content="2021-12-10T15:04:56&#43;05:30"
       />
     
-    <meta property="article:modified_time" content="2021-12-06T11:21:41&#43;05:30">
+    <meta property="article:modified_time" content="2021-12-10T15:04:56&#43;05:30">
   
 
   
@@ -326,12 +326,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://skmtr1.github.io/publication/deepdetect/"
+    "@id": "https://skmtr1.github.io/publication/mapfam/"
   },
-  "headline": "DeepDetect: A Practical On-device Android Malware Detector",
+  "headline": "Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages?",
   
-  "datePublished": "2021-11-23T11:21:41+05:30",
-  "dateModified": "2021-12-06T11:21:41+05:30",
+  "datePublished": "2021-12-10T15:04:56+05:30",
+  "dateModified": "2021-12-10T15:04:56+05:30",
   
   "author": {
     "@type": "Person",
@@ -346,7 +346,7 @@
       "url": "https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Over the past few years, Android has become one of the most popular operating systems for smartphones as it is open-source and provides extensive support for wide variety of applications. This has led to an increase in the number of malware targeting Android devices. The lack of robust security enforcement in Play Store along with the rapid increase in the number of new Android malware presents a scope for a variety of diverse malicious applications to spread across devices. Furthermore, Android allows installation of an application from unverified sources (e.g., third-party market and sideloading), which opens up other ways for malware to infect the smartphones. This paper presents DeepDetect that enables on-device malware detection by employing a machine learning based model on static features. With effective feature engineering, DeepDetect can be used on-device. To classify an Android application as malware, it takes ∼5.32 seconds, which is 2.23X faster than API based malware detector, while consuming 0.45% (for 50 applications) of total device energy. DeepDetect provides a malware detection rate of 99.9% for known malware with a 0.01% false-positive rate. For unseen/new samples, it detects more than 97% malware with a false-positive rate of 173%. Further, in the presence of obfuscated malware, DeepDetect correctly detects 95.57% of malware samples. We have also evaluated our model against the Pegasus malware sample and with a new dataset after removing the potential biases across space and time."
+  "description": "With the increased popularity and wide adoption as a mobile OS platform, Android has been a major target for malware authors. Due to unprecedented rapid growth in the number, variants, and diversity of malware, detecting malware on the Android platform has become challenging. Beyond the detection of a malware, classifying the family the malware belongs to, helps security analysts to reuse malware removal techniques that is known to work for that family of malware. It takes manual analysis if a malware belongs to an unknown family. Therefore, classifying malware into exact family is important. This paper presents a technique and tool named MAPFam that applies machine learning on static features from the Manifest file and API packages to classify an Android malware into its family. This work is premised on a starting hypothesis that features extracted from API packages rather than on API calls lead to more precise classification. Our experiments indeed shows that API package based models provides ~1.63X more accurate classification compared to an API call based method. Our machine learning based malware family classification system uses API packages, requested permissions, and other features from the Manifest files. The proposed family classification system achieves accuracy and average precision above 97% for the top 60 malware families by using only 81 features with 97.55% of model reliability rate (Kappa score). The experimental results also shows that MAPFam can perfectly identity 36 malware families."
 }
 </script>
 
@@ -362,11 +362,11 @@
 
 
 
-  <title>DeepDetect: A Practical On-device Android Malware Detector | Saurabh Kumar</title>
+  <title>Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages? | Saurabh Kumar</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1fa8b840178075d6b57828305bb6d3ca" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="25dc7125745baa32e0b5ff5de206ca1f" >
 
   
   
@@ -695,7 +695,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>DeepDetect: A Practical On-device Android Malware Detector</h1>
+  <h1>Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages?</h1>
 
   
 
@@ -715,7 +715,6 @@
   <span >
       Saurabh Kumar</span>, <span >
       Debadatta Mishra</span>, <span >
-      Biswabandan Panda</span>, <span >
       Sandeep Kumar Shukla</span>
   </div>
   
@@ -752,77 +751,6 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="/slides/DeepDetect/preprint.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="/slides/DeepDetect/DeepDetect.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=ziwIJGttkYg" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://skmtr1.github.io/DeepDetect.html" target="_blank" rel="noopener">
-    Appendix</a>
-
-
-</div>
-
 
   
 </div>
@@ -833,7 +761,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Over the past few years, Android has become one of the most popular operating systems for smartphones as it is open-source and provides extensive support for wide variety of applications. This has led to an increase in the number of malware targeting Android devices. The lack of robust security enforcement in Play Store along with the rapid increase in the number of new Android malware presents a scope for a variety of diverse malicious applications to spread across devices. Furthermore, Android allows installation of an application from unverified sources (e.g., third-party market and sideloading), which opens up other ways for malware to infect the smartphones. This paper presents DeepDetect that enables on-device malware detection by employing a machine learning based model on static features. With effective feature engineering, DeepDetect can be used on-device. To classify an Android application as malware, it takes ∼5.32 seconds, which is 2.23X faster than API based malware detector, while consuming 0.45% (for 50 applications) of total device energy. DeepDetect provides a malware detection rate of 99.9% for known malware with a 0.01% false-positive rate. For unseen/new samples, it detects more than 97% malware with a false-positive rate of 173%. Further, in the presence of obfuscated malware, DeepDetect correctly detects 95.57% of malware samples. We have also evaluated our model against the Pegasus malware sample and with a new dataset after removing the potential biases across space and time.</p>
+    <p class="pub-abstract">With the increased popularity and wide adoption as a mobile OS platform, Android has been a major target for malware authors. Due to unprecedented rapid growth in the number, variants, and diversity of malware, detecting malware on the Android platform has become challenging. Beyond the detection of a malware, classifying the family the malware belongs to, helps security analysts to reuse malware removal techniques that is known to work for that family of malware. It takes manual analysis if a malware belongs to an unknown family. Therefore, classifying malware into exact family is important. This paper presents a technique and tool named MAPFam that applies machine learning on static features from the Manifest file and API packages to classify an Android malware into its family. This work is premised on a starting hypothesis that features extracted from API packages rather than on API calls lead to more precise classification. Our experiments indeed shows that API package based models provides ~1.63X more accurate classification compared to an API call based method. Our machine learning based malware family classification system uses API packages, requested permissions, and other features from the Manifest files. The proposed family classification system achieves accuracy and average precision above 97% for the top 60 malware families by using only 81 features with 97.55% of model reliability rate (Kappa score). The experimental results also shows that MAPFam can perfectly identity 36 malware families.</p>
     
 
     
@@ -861,7 +789,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">21st IEEE International Conference on Software Quality, Reliability, and Security (<a href="https://qrs21.techconf.org/">QRS-2021</a>) <span style="color:red">Accepted for presentation</span></div>
+          <div class="col-12 col-md-9">14th International Conference on Security of Information and Networks (<a href="https://www.sinconf.org/sin2021/">SIN-2021</a>) <span style="color:red">Accepted for presentation</span></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -893,7 +821,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://skmtr1.github.io/publication/deepdetect/&amp;text=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://skmtr1.github.io/publication/mapfam/&amp;text=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -906,7 +834,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://skmtr1.github.io/publication/deepdetect/&amp;t=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://skmtr1.github.io/publication/mapfam/&amp;t=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -919,7 +847,7 @@
       
       
       <li>
-        <a href="mailto:?subject=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector&amp;body=https://skmtr1.github.io/publication/deepdetect/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?&amp;body=https://skmtr1.github.io/publication/mapfam/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -932,7 +860,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://skmtr1.github.io/publication/deepdetect/&amp;title=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://skmtr1.github.io/publication/mapfam/&amp;title=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -945,7 +873,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector%20https://skmtr1.github.io/publication/deepdetect/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?%20https://skmtr1.github.io/publication/mapfam/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -958,7 +886,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://skmtr1.github.io/publication/deepdetect/&amp;title=DeepDetect:%20A%20Practical%20On-device%20Android%20Malware%20Detector" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://skmtr1.github.io/publication/mapfam/&amp;title=Android%20Malware%20Family%20Classification:%20What%20Works%20--%20API%20Calls,%20Permissions%20or%20API%20Packages?" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -977,12 +905,6 @@
 
 
   
-  
-    
-
-
-
-
   
     
 
