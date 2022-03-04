@@ -30,10 +30,11 @@
   
     
   
-  <meta name="description" content="PhD Candidate" />
+  <meta name="description" content="Usage of the execution stack at run-time captures the dynamic state of programs and can be used to derive useful insights into the program behaviour. The stack usage information can be used to identify and debug performance and security aspects of applications. Binary run-time instrumentation techniques are well known to capture the memory access traces during program execution. Tracing the program in entirety and filtering out stack specific accesses is a commonly used technique for stack related analysis. However, applying vanilla tracing techniques (using tools like Intel Pin) for multi-threaded programs has challenges such as identifying the stack areas to perform efficient run-time tracing.
+In this paper, we introduce SniP, an open-source stack tracing framework for multi-threaded programs built around Intel’s binary instrumentation tool Pin. SniP provides a framework for efficient run-time tracing of stack areas used by multi-threaded applications by identifying the stack areas dynamically. The targeted tracing capability of SniP is demonstrated using a range of multi-threaded applications to show its efficacy in terms of trace size and time to trace. Compared to full program tracing using Pin, SniP achieves up to 75X reduction in terms of trace file size and up to 24X reduction in time to trace. SniP complements existing trace based stack usage analysis tools and we demonstrate that SniP can be easily integrated with the analysis framework through different use-cases." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://skmtr1.github.io/publication-type/1/" />
+  <link rel="alternate" hreflang="en-us" href="https://skmtr1.github.io/publication/snip/" />
 
   
 
@@ -268,8 +269,6 @@
   
 
   
-    <link rel="alternate" href="/publication-type/1/index.xml" type="application/rss+xml" title="Saurabh Kumar" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -278,7 +277,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://skmtr1.github.io/publication-type/1/" />
+  <link rel="canonical" href="https://skmtr1.github.io/publication/snip/" />
 
   
   
@@ -295,33 +294,81 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Saurabh Kumar" />
-  <meta property="og:url" content="https://skmtr1.github.io/publication-type/1/" />
-  <meta property="og:title" content="1 | Saurabh Kumar" />
-  <meta property="og:description" content="PhD Candidate" /><meta property="og:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://skmtr1.github.io/publication/snip/" />
+  <meta property="og:title" content="SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs | Saurabh Kumar" />
+  <meta property="og:description" content="Usage of the execution stack at run-time captures the dynamic state of programs and can be used to derive useful insights into the program behaviour. The stack usage information can be used to identify and debug performance and security aspects of applications. Binary run-time instrumentation techniques are well known to capture the memory access traces during program execution. Tracing the program in entirety and filtering out stack specific accesses is a commonly used technique for stack related analysis. However, applying vanilla tracing techniques (using tools like Intel Pin) for multi-threaded programs has challenges such as identifying the stack areas to perform efficient run-time tracing.
+In this paper, we introduce SniP, an open-source stack tracing framework for multi-threaded programs built around Intel’s binary instrumentation tool Pin. SniP provides a framework for efficient run-time tracing of stack areas used by multi-threaded applications by identifying the stack areas dynamically. The targeted tracing capability of SniP is demonstrated using a range of multi-threaded applications to show its efficacy in terms of trace size and time to trace. Compared to full program tracing using Pin, SniP achieves up to 75X reduction in terms of trace file size and up to 24X reduction in time to trace. SniP complements existing trace based stack usage analysis tools and we demonstrate that SniP can be easily integrated with the analysis framework through different use-cases." /><meta property="og:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2022-03-04T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2022-03-04T10:58:33&#43;05:30"
+      />
     
+    <meta property="article:modified_time" content="2022-03-04T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://skmtr1.github.io/publication/snip/"
+  },
+  "headline": "SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs",
+  
+  "datePublished": "2022-03-04T10:58:33+05:30",
+  "dateModified": "2022-03-04T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Arun KP"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saurabh Kumar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Usage of the execution stack at run-time captures the dynamic state of programs and can be used to derive useful insights into the program behaviour. The stack usage information can be used to identify and debug performance and security aspects of applications. Binary run-time instrumentation techniques are well known to capture the memory access traces during program execution. Tracing the program in entirety and filtering out stack specific accesses is a commonly used technique for stack related analysis. However, applying vanilla tracing techniques (using tools like Intel Pin) for multi-threaded programs has challenges such as identifying the stack areas to perform efficient run-time tracing.\nIn this paper, we introduce SniP, an open-source stack tracing framework for multi-threaded programs built around Intel’s binary instrumentation tool Pin. SniP provides a framework for efficient run-time tracing of stack areas used by multi-threaded applications by identifying the stack areas dynamically. The targeted tracing capability of SniP is demonstrated using a range of multi-threaded applications to show its efficacy in terms of trace size and time to trace. Compared to full program tracing using Pin, SniP achieves up to 75X reduction in terms of trace file size and up to 24X reduction in time to trace. SniP complements existing trace based stack usage analysis tools and we demonstrate that SniP can be easily integrated with the analysis framework through different use-cases."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>1 | Saurabh Kumar</title>
+  <title>SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs | Saurabh Kumar</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0f56e81cc2b80312a38aa1de9f24ea39" >
 
   
   
@@ -629,6 +676,17 @@
 
 
 
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -637,179 +695,68 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1>SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>1</h1>
-
-  
-
-  
-</div>
 
 
-
-<div class="universal-wrapper">
-  
+<div class="article-metadata">
 
   
   
+  
+  
+  <div>
     
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/androobfs/" >AndroOBFS: Time-tagged Obfuscated Android Malware Dataset with Family Information</a>
-    </div>
-
-    
-    <a href="/publication/androobfs/"  class="summary-link">
-      <div class="article-style">
-        With the large-scale adaptation of Android OS and ever-increasing contributions in the Android application space, Android has become …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      Saurabh Kumar</span>, <span >
-      Debadatta Mishra</span>, <span >
-      Biswabandan Panda</span>, <span >
-      Sandeep Kumar Shukla</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/androobfs/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/snip/" >SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs</a>
-    </div>
-
-    
-    <a href="/publication/snip/"  class="summary-link">
-      <div class="article-style">
-        Usage of the execution stack at run-time captures the dynamic state of programs and can be used to derive useful insights into the …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
 
   <span >
       Arun KP</span>, <span >
       Saurabh Kumar</span>, <span >
       Debadatta Mishra</span>, <span >
       Biswabandan Panda</span>
-      </div>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
       
-    </div>
+    
+    March 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
 
     
-    <div class="btn-links">
-      
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
 
 
 
@@ -824,7 +771,7 @@
 
 
 
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
         data-filename="/publication/snip/cite.bib">
   Cite
 </a>
@@ -843,635 +790,210 @@
 
 
 
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
-    
-  
-    
-      
-
-
-
-
-
-
 
   
+</div>
 
 
 
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/mapfam/" >Android Malware Family Classification: What Works -- API Calls, Permissions or API Packages?</a>
-    </div>
+  <div class="article-container">
 
     
-    <a href="/publication/mapfam/"  class="summary-link">
-      <div class="article-style">
-        With the increased popularity and wide adoption as a mobile OS platform, Android has been a major target for malware authors. Due to …
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Usage of the execution stack at run-time captures the dynamic state of programs and can be used to derive useful insights into the program behaviour. The stack usage information can be used to identify and debug performance and security aspects of applications. Binary run-time instrumentation techniques are well known to capture the memory access traces during program execution. Tracing the program in entirety and filtering out stack specific accesses is a commonly used technique for stack related analysis. However, applying vanilla tracing techniques (using tools like Intel Pin) for multi-threaded programs has challenges such as identifying the stack areas to perform efficient run-time tracing.
+In this paper, we introduce SniP, an open-source stack tracing framework for multi-threaded programs built around Intel’s binary instrumentation tool Pin. SniP provides a framework for efficient run-time tracing of stack areas used by multi-threaded applications by identifying the stack areas dynamically. The targeted tracing capability of SniP is demonstrated using a range of multi-threaded applications to show its efficacy in terms of trace size and time to trace. Compared to full program tracing using Pin, SniP achieves up to 75X reduction in terms of trace file size and up to 24X reduction in time to trace. SniP complements existing trace based stack usage analysis tools and we demonstrate that SniP can be easily integrated with the analysis framework through different use-cases.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
       </div>
-    </a>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
 
-    <div class="stream-meta article-metadata">
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">2022 IEEE/ACM 19th International Conference on Mining Software Repositories (<a href="https://conf.researchr.org/home/msr-2022">MSR-2022</a>) <span style="color:red">Accepted for presentation</span></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
 
-      
+    <div class="space-below"></div>
 
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
       
-      <div>
+      
+      
         
-
-  <span >
-      Saurabh Kumar</span>, <span >
-      Debadatta Mishra</span>, <span >
-      Sandeep Kumar Shukla</span>
-      </div>
       
-    </div>
-
-    
-    <div class="btn-links">
       
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/MAPFam/preprint-MAPFam.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-  
-
-
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/mapfam/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/MAPFam/MAPFam.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=Hhw6bX1bbJY" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/SIN54109.2021.9699322" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://skmtr1.github.io/publication/snip/&amp;text=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/deepdetect/" >DeepDetect: A Practical On-device Android Malware Detector</a>
-    </div>
-
-    
-    <a href="/publication/deepdetect/"  class="summary-link">
-      <div class="article-style">
-        Over the past few years, Android has become one of the most popular operating systems for smartphones as it is open-source and provides …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
-      <div>
         
-
-  <span >
-      Saurabh Kumar</span>, <span >
-      Debadatta Mishra</span>, <span >
-      Biswabandan Panda</span>, <span >
-      Sandeep Kumar Shukla</span>
-      </div>
       
-    </div>
-
-    
-    <div class="btn-links">
       
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/DeepDetect/preprint-DeepDetect.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-  
-
-
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/deepdetect/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/DeepDetect/DeepDetect.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=ziwIJGttkYg" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://skmtr1.github.io/DeepDetect.html" target="_blank" rel="noopener">
-    Appendix</a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://skmtr1.github.io/publication/snip/&amp;t=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/stdneut/" >STDNeut: Neutralizing Sensor, Telephony System and Device State Information on Emulated Android Environments</a>
-    </div>
-
-    
-    <a href="/publication/stdneut/"  class="summary-link">
-      <div class="article-style">
-        Sophisticated malware employs various emulation-detection techniques to bypass the dynamic analysis systems that are running on top of …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
-      <div>
         
-
-  <span >
-      Saurabh Kumar</span>, <span >
-      Debadatta Mishra</span>, <span >
-      Biswabandan Panda</span>, <span >
-      Sandeep Kumar Shukla</span>
-      </div>
       
-    </div>
-
-    
-    <div class="btn-links">
       
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/STDNeut/preprint-STDNeut.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-  
-
-
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/stdneut/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/STDNeut/STDNeut.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=ahAgW4Wj3qc" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-3-030-65411-5_5" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://skmtr1.github.io/EmuDetLib.html" target="_blank" rel="noopener">
-    Appendix</a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
+      
+      <li>
+        <a href="mailto:?subject=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs&amp;body=https://skmtr1.github.io/publication/snip/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/host-server/" >Host-Server-Based Malware Detection System for Android Platforms Using Machine Learning</a>
-    </div>
-
-    
-    <a href="/publication/host-server/"  class="summary-link">
-      <div class="article-style">
-        The popularity and openness of Android have made it the easy target of malware operators acting mainly through malware-spreading apps. …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
-      <div>
         
-
-  <span >
-      Anam Fatima</span>, <span >
-      Saurabh Kumar</span>, <span >
-      Malay Kishore Dutta</span>
-      </div>
       
-    </div>
-
-    
-    <div class="btn-links">
       
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/host-server/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1007/978-981-15-1275-9_17" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://skmtr1.github.io/publication/snip/&amp;title=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/enhanced/" >An Enhanced and Effective Encrypting Algorithm for High Volume Video Data Streaming Application on MANET</a>
-    </div>
-
-    
-    <a href="/publication/enhanced/"  class="summary-link">
-      <div class="article-style">
-        In this paper we are proposing an effective encryption technique for high volume streaming data which has been sent over various …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
-      <div>
         
-
-  <span >
-      Saurabh Kumar</span>, <span >
-      Sandeep Kumar</span>
-      </div>
       
-    </div>
-
-    
-    <div class="btn-links">
       
-
-
-
-
-
-
-
-
-  
+      
+      <li>
+        <a href="whatsapp://send?text=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs%20https://skmtr1.github.io/publication/snip/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
     
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://research.ijcaonline.org/irafit/number7/irafit1051.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/enhanced/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://skmtr1.github.io/publication/snip/&amp;title=SniP:%20An%20Efficient%20Stack%20Tracing%20Framework%20for%20Multi-threaded%20Programs" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+  </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+  
+  
     
+
+
+
+
   
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
 </div>
   </div>
 
