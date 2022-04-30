@@ -5,12 +5,28 @@
     <link>https://skmtr1.github.io/event/</link>
       <atom:link href="https://skmtr1.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Oct 2021 14:00:00 +0530</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Mar 2022 13:22:28 +0530</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://skmtr1.github.io/event/</link>
     </image>
+    
+    <item>
+      <title>Mobile Security: Android</title>
+      <link>https://skmtr1.github.io/talk/mobile-security-android/</link>
+      <pubDate>Wed, 09 Mar 2022 13:22:28 +0530</pubDate>
+      <guid>https://skmtr1.github.io/talk/mobile-security-android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile Forensics and Challenges</title>
+      <link>https://skmtr1.github.io/talk/mobile-forensics-and-challenges/</link>
+      <pubDate>Tue, 08 Mar 2022 10:00:00 +0530</pubDate>
+      <guid>https://skmtr1.github.io/talk/mobile-forensics-and-challenges/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mobile Forensics and Challenges: Perspective of Indian Investigators</title>
