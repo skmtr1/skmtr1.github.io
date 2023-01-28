@@ -5,12 +5,20 @@
     <link>https://skmtr1.github.io/publication-type/1/</link>
       <atom:link href="https://skmtr1.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 04 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 15:04:56 +0530</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://skmtr1.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>KalpaVriksh: Efficient and Cost-effective GUI Application Hosting using Singleton Snapshots</title>
+      <link>https://skmtr1.github.io/publication/kalpavriksh/</link>
+      <pubDate>Mon, 01 May 2023 15:04:56 +0530</pubDate>
+      <guid>https://skmtr1.github.io/publication/kalpavriksh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AndroOBFS: Time-tagged Obfuscated Android Malware Dataset with Family Information</title>
