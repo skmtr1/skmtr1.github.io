@@ -5,12 +5,20 @@
     <link>https://skmtr1.github.io/publication/</link>
       <atom:link href="https://skmtr1.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://skmtr1.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>GLAMP: Generative Learning for Adversarially-Robust Malware Prediction</title>
+      <link>https://skmtr1.github.io/publication/glamp/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://skmtr1.github.io/publication/glamp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reinforcement-Learning Based Covert Social Influence Operations</title>

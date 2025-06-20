@@ -5,12 +5,20 @@
     <link>https://skmtr1.github.io/</link>
       <atom:link href="https://skmtr1.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Saurabh Kumar</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://skmtr1.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Saurabh Kumar</title>
       <link>https://skmtr1.github.io/</link>
     </image>
+    
+    <item>
+      <title>GLAMP: Generative Learning for Adversarially-Robust Malware Prediction</title>
+      <link>https://skmtr1.github.io/publication/glamp/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://skmtr1.github.io/publication/glamp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reinforcement-Learning Based Covert Social Influence Operations</title>
@@ -170,7 +178,8 @@
 
 
 
-&lt;strong&gt;Jan, 2025:&lt;/strong&gt; One paper titled &amp;ldquo;Reinforcement-Learning Based Covert Social Influence Operations&amp;rdquo; is accepted at &lt;a href=&#34;https://www2025.thewebconf.org/&#34;&gt;The Web Confrence (WWW) 2025&lt;/a&gt;.
+&lt;strong&gt;June, 2025:&lt;/strong&gt; One paper titled &amp;ldquo;GLAMP: Generative Learning for Adversarially-Robust Malware Prediction&amp;rdquo; is accepted at IEEE Transactions on Emerging Topics in Computing (TETC) &lt;strong&gt;[Q1]&lt;/strong&gt;.
+&lt;br/&gt;&lt;strong&gt;Jan, 2025:&lt;/strong&gt; One paper titled &amp;ldquo;Reinforcement-Learning Based Covert Social Influence Operations&amp;rdquo; is accepted at &lt;a href=&#34;https://www2025.thewebconf.org/&#34;&gt;The Web Confrence (WWW) 2025&lt;/a&gt;.
 &lt;br/&gt;&lt;strong&gt;Jan, 2025:&lt;/strong&gt; One paper titled &amp;ldquo;SCRUBD: Smart Contracts Reentrancy and Unhandled Exceptions Vulnerability Dataset&amp;rdquo; is accepted at &lt;a href=&#34;https://2025.msrconf.org/track/msr-2025-data-and-tool-showcase-track&#34;&gt;MSR 2025&lt;/a&gt; under Data and Tool Showcase Track.
 &lt;br/&gt;&lt;strong&gt;July, 2024:&lt;/strong&gt; Joined IIT Hyderabad.
 &lt;br/&gt;&lt;strong&gt;Mar, 2024:&lt;/strong&gt; Our paper titled &amp;ldquo;Climbing the Influence Tiers on TikTok: A Multimodal Study&amp;rdquo; is accepted at &lt;a href=&#34;https://www.icwsm.org/2024/index.html/&#34;&gt;ICWSM 2024&lt;/a&gt;.
